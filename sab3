@@ -1,6 +1,6 @@
 function getFileIdsInFolder() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var folderId = ss.getSheetByName("Mail Data").getRange("E2").getValue(); //change with your folder name
+  var folderId = ss.getSheetByName("Mail Data").getRange("E2").getValue(); //change with your Sheet name & fill the folder ID in the desired Range
   var folder = DriveApp.getFolderById(folderId);
   var files = folder.getFiles();
   var sheet = ss.getSheetByName("Base Data"); //change with your Sheet name
